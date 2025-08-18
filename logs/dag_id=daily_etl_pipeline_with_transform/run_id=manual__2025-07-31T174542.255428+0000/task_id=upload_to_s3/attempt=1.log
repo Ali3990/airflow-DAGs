@@ -1,0 +1,5 @@
+{"timestamp":"2025-07-31T17:45:48.707862","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-31T17:45:48.708291","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/our_first_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-31T17:45:49.609237","level":"info","event":"Found credentials in environment variables.","logger":"botocore.credentials"}
+{"timestamp":"2025-07-31T17:45:50.171454Z","level":"info","event":"Uploaded to s3://ali-airflow-bucket/ali-airflow-bucket/events_transformed_2025-07-31.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-31T17:45:50.173176","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

@@ -1,0 +1,4 @@
+{"timestamp":"2025-08-04T23:44:23.211500","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-04T23:44:23.211991","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/create_dag_with_python_operator.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-04T23:44:23.275362Z","level":"info","event":"Hello World! My name is Jerry Fridman, and I am 20 years old.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-04T23:44:23.275992","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
