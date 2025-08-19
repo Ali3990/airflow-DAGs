@@ -1,17 +1,17 @@
 from datetime import datetime, timedelta
-from airflow import DAG
+from airflow.sdk import DAG
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 
 default_args = {
     'owner': 'Alan',
-    'retries': 5,
-    'retry_delay': timedelta(minutes=5),
+    'retries': 1,
+    'retry_delay': timedelta(minutes=2),
 }
 
 with DAG(
-    dag_id='dag_with_postgres_operator_test_v02',
+    dag_id='test_CoreLogic_PostGresDB_Connection_v01',
     default_args=default_args,
-    start_date=datetime(2021, 12, 19),
+    start_date=datetime(2025, 8, 1),
     schedule=None,  # Run manually for testing
     catchup=False
 ) as dag:
