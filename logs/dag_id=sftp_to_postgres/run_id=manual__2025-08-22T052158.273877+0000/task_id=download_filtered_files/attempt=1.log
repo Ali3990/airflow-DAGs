@@ -1,0 +1,75 @@
+{"timestamp":"2025-08-22T05:22:20.485851","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-22T05:22:20.486399","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-22T05:22:20.669931","level":"info","event":"Connection Retrieved 'sftp_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-22T05:22:20.670556","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:22:24.738789","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:24.900644","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:24.951259","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:25.048223","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:32.862425","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:32.863053Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250401.zip → /opt/airflow/downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250401.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:22:32.863003","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:22:33.019037","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:33.188315","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:33.239443","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:33.336695","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:41.219794","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:41.220290","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:22:41.220796Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250501.zip → /opt/airflow/downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250501.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:22:44.216935","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:44.385246","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:44.435762","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:44.537887","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:52.556574","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:22:52.557126","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:22:52.557909Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250602.zip → /opt/airflow/downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250602.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:22:56.628039","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:56.805417","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:56.856887","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:22:56.953318","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:04.848223","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:04.848909","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:04.849506Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250701.zip → /opt/airflow/downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250701.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:04.988113","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:05.153189","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:05.202744","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:05.305105","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:13.156409","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:13.156866","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:13.157479Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip → /opt/airflow/downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:16.103285","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:16.260836","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:16.311392","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:16.409107","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:17.668866","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:17.669288","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:17.669857Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250401.zip → /opt/airflow/downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250401.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:17.752273","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:17.913010","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:17.967254","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:18.061289","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:19.384354","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:19.384942","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:19.385609Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250501.zip → /opt/airflow/downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250501.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:19.452699","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:19.621772","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:19.682524","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:19.782749","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:21.159454","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:21.159894","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:21.172577Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250602.zip → /opt/airflow/downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250602.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:25.228797","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:25.398439","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:25.449505","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:25.546846","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:26.846610","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:26.847220","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-22T05:23:26.869904Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250701.zip → /opt/airflow/downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250701.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:28.891849","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:29.050916","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:29.099921","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-22T05:23:29.195348","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:30.516999","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-22T05:23:30.517481","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-08-22T05:23:30.517959Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip → /opt/airflow/downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-22T05:23:30.518223Z","level":"info","event":"🎯 Finished downloading matching files.","chan":"stdout","logger":"task"}

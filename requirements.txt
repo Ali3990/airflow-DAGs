@@ -1,6 +1,7 @@
 apache-airflow-providers-fab==2.0.2
-pandas==2.1.1
-boto3==1.38.21
 apache-airflow-providers-common-sql
 apache-airflow-providers-postgres
 apache-airflow-providers-sftp
+boto3==1.38.21
+numpy==1.26.4
+pandas==2.1.1
