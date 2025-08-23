@@ -23,7 +23,7 @@ LOCAL_DOWNLOAD_DIR = "/tmp/sftp_downloads"
     catchup=False,
     tags=["sftp", "postgres", "taskflow"],
 )
-def sftp_to_postgres_v02():
+def sftp_to_postgres_v01():
 
     @task()
     def ensure_table_exists():
@@ -95,10 +95,25 @@ def sftp_to_postgres_v02():
                                 conn = pg_hook.get_conn()
                                 cur = conn.cursor()
 
-                                # Drop + recreate (optional: remove DROP if you only want append)
-                                cur.execute('DROP TABLE IF EXISTS sftp_imports;')
+                                # ✅ Derive table name safely from file name
+                                raw_name = os.path.basename(txt_file)
+                                table_name = re.sub(r"\.txt$", "", raw_name, flags=re.IGNORECASE)
+                                table_name = re.sub(r"[^a-zA-Z0-9_]", "_", table_name)
+                                table_name = table_name.lower()
+
+                                # Truncate to Postgres max identifier length (63)
+                                table_name = table_name[:63]
+
+                                print(f"📌 Creating/loading table: {table_name}")
+
+                                # Connect to Postgres
+                                conn = pg_hook.get_conn()
+                                cur = conn.cursor()
+
+                                # Drop + recreate table
+                                cur.execute(f'DROP TABLE IF EXISTS "{table_name}";')
                                 columns_with_types = ", ".join([f'"{col}" VARCHAR(50)' for col in df.columns])
-                                cur.execute(f'CREATE TABLE sftp_imports ({columns_with_types});')
+                                cur.execute(f'CREATE TABLE "{table_name}" ({columns_with_types});')
                                 conn.commit()
 
                                 # Convert DataFrame → CSV in memory
@@ -109,14 +124,14 @@ def sftp_to_postgres_v02():
 
                                 # Bulk load with COPY
                                 cur.copy_expert(
-                                    f'COPY sftp_imports FROM STDIN WITH CSV',
+                                    f'COPY "{table_name}" FROM STDIN WITH CSV',
                                     csv_buffer
                                 )
 
                                 conn.commit()
                                 cur.close()
                                 conn.close()
-                                print(f"✅ Bulk uploaded {len(df)} rows from {txt_file}")
+                                print(f"✅ Bulk uploaded {len(df)} rows into {table_name}")
 
                 except zipfile.BadZipFile as e:
                     print(f"❌ Failed to extract {f}: {e}")
@@ -129,4 +144,4 @@ def sftp_to_postgres_v02():
 
     table_check >> conn_check >> files >> download_upload
 
-dag = sftp_to_postgres_v02()
+dag = sftp_to_postgres_v01()

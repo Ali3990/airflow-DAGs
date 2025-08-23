@@ -1,0 +1,24 @@
+{"timestamp":"2025-08-23T02:28:43.032141","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-23T02:28:43.032873","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v02.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-23T02:28:43.474743Z","level":"info","event":"🎯 Latest month detected: 202508","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:28:43.482417","level":"info","event":"Connection Retrieved 'sftp_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-23T02:28:43.482858","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-23T02:28:43.603961","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:28:43.765338","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:28:43.817370","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:28:43.907905","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-23T02:28:52.991933","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-23T02:28:52.992506Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip → /tmp/sftp_downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:29:31.077418Z","level":"info","event":"📌 Creating/loading table: marcus_millichap_0000757_nationwidehomesalesreport_delivery_202","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:29:31.087141","level":"info","event":"Connection Retrieved 'DBeaver_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-23T02:30:40.954877Z","level":"info","event":"✅ Bulk uploaded 1396437 rows into marcus_millichap_0000757_nationwidehomesalesreport_delivery_202","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:30:41.033155","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-23T02:30:45.195742","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:30:45.562448","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:30:45.620418","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-23T02:30:45.739379","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-23T02:30:47.054113","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-23T02:30:47.059997Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip → /tmp/sftp_downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:31:03.130526Z","level":"info","event":"📌 Creating/loading table: marcusmillichap_0000757_fcl_activity_report_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:31:12.540456Z","level":"info","event":"✅ Bulk uploaded 747329 rows into marcusmillichap_0000757_fcl_activity_report_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-23T02:31:12.645520","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
