@@ -1,6 +1,6 @@
-apache-airflow-providers-fab==2.0.2
 apache-airflow-providers-common-sql
 apache-airflow-providers-postgres
+apache-airflow-providers-microsoft-mssql
 apache-airflow-providers-sftp
 boto3==1.38.21
 numpy==1.26.4

@@ -23,7 +23,7 @@ LOCAL_DOWNLOAD_DIR = "/tmp/sftp_downloads"
     catchup=False,
     tags=["sftp", "postgres", "taskflow"],
 )
-def sftp_to_postgres_v03():
+def sftp_to_postgres_v02():
 
     @task()
     def ensure_table_exists():
@@ -145,4 +145,4 @@ def sftp_to_postgres_v03():
 
     table_check >> conn_check >> files >> download_upload
 
-dag = sftp_to_postgres_v03()
+dag = sftp_to_postgres_v02()
