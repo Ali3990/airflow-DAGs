@@ -89,3 +89,12 @@
 {"timestamp":"2025-08-26T02:47:02.796322","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-08-26T02:47:33.276467","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-08-26T02:48:03.889480","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:11:09.808211","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:11:48.656591","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:12:21.949495","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:12:53.721593","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:13:25.083040","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:13:58.630941","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:14:33.993896","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:15:10.381476","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:15:41.980394","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
