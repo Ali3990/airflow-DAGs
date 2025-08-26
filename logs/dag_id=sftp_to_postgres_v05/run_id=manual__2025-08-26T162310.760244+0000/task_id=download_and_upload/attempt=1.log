@@ -1,0 +1,880 @@
+{"timestamp":"2025-08-26T16:23:24.307276","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-26T16:23:24.307964","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v03.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-26T16:23:24.982957Z","level":"info","event":"🎯 Latest date detected: 20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:23:24.997551","level":"info","event":"Connection Retrieved 'sftp_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-26T16:23:24.999476","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-26T16:23:25.087538","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:23:25.305677","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:23:25.364708","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:23:25.475284","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-26T16:24:48.035348","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-26T16:24:48.037191Z","level":"info","event":"✅ Downloaded Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip → /tmp/sftp_downloads/Marcus&Millichap_0000757_NationwideHomeSalesReport_Delivery_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:11.582087Z","level":"info","event":"📌 Loading chunk 0 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:11.600170","level":"info","event":"Connection Retrieved 'DBeaver_conn'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-26T16:25:12.807041Z","level":"info","event":"✅ Uploaded chunk 0 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:13.282812Z","level":"info","event":"📌 Loading chunk 1 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:13.995290Z","level":"info","event":"✅ Uploaded chunk 1 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:14.280407Z","level":"info","event":"📌 Loading chunk 2 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:14.694137Z","level":"info","event":"✅ Uploaded chunk 2 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:14.935150Z","level":"info","event":"📌 Loading chunk 3 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:15.385773Z","level":"info","event":"✅ Uploaded chunk 3 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:15.701627Z","level":"info","event":"📌 Loading chunk 4 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:16.288177Z","level":"info","event":"✅ Uploaded chunk 4 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:16.471397Z","level":"info","event":"📌 Loading chunk 5 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:16.827286Z","level":"info","event":"✅ Uploaded chunk 5 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:16.990004Z","level":"info","event":"📌 Loading chunk 6 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:17.390468Z","level":"info","event":"✅ Uploaded chunk 6 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:17.552573Z","level":"info","event":"📌 Loading chunk 7 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:18.048612Z","level":"info","event":"✅ Uploaded chunk 7 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:18.244675Z","level":"info","event":"📌 Loading chunk 8 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:18.630172Z","level":"info","event":"✅ Uploaded chunk 8 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:18.831067Z","level":"info","event":"📌 Loading chunk 9 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:19.212773Z","level":"info","event":"✅ Uploaded chunk 9 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:19.386606Z","level":"info","event":"📌 Loading chunk 10 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:19.870522Z","level":"info","event":"✅ Uploaded chunk 10 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:20.095677Z","level":"info","event":"📌 Loading chunk 11 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:20.422009Z","level":"info","event":"✅ Uploaded chunk 11 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:20.600938Z","level":"info","event":"📌 Loading chunk 12 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:20.883375Z","level":"info","event":"✅ Uploaded chunk 12 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:21.033371Z","level":"info","event":"📌 Loading chunk 13 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:21.396058Z","level":"info","event":"✅ Uploaded chunk 13 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:21.531848Z","level":"info","event":"📌 Loading chunk 14 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:21.967075Z","level":"info","event":"✅ Uploaded chunk 14 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:22.310398Z","level":"info","event":"📌 Loading chunk 15 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:22.781881Z","level":"info","event":"✅ Uploaded chunk 15 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:22.937509Z","level":"info","event":"📌 Loading chunk 16 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:23.362903Z","level":"info","event":"✅ Uploaded chunk 16 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:23.583467Z","level":"info","event":"📌 Loading chunk 17 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:24.008176Z","level":"info","event":"✅ Uploaded chunk 17 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:24.322497Z","level":"info","event":"📌 Loading chunk 18 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:24.709960Z","level":"info","event":"✅ Uploaded chunk 18 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:25.039573Z","level":"info","event":"📌 Loading chunk 19 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:25.353678Z","level":"info","event":"✅ Uploaded chunk 19 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:25.593117Z","level":"info","event":"📌 Loading chunk 20 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:26.719110Z","level":"info","event":"✅ Uploaded chunk 20 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:26.924972Z","level":"info","event":"📌 Loading chunk 21 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:27.193742Z","level":"info","event":"✅ Uploaded chunk 21 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:27.391818Z","level":"info","event":"📌 Loading chunk 22 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:27.688284Z","level":"info","event":"✅ Uploaded chunk 22 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:28.011367Z","level":"info","event":"📌 Loading chunk 23 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:28.394737Z","level":"info","event":"✅ Uploaded chunk 23 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:28.766953Z","level":"info","event":"📌 Loading chunk 24 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:29.343335Z","level":"info","event":"✅ Uploaded chunk 24 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:29.623384Z","level":"info","event":"📌 Loading chunk 25 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:30.206276Z","level":"info","event":"✅ Uploaded chunk 25 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:30.506629Z","level":"info","event":"📌 Loading chunk 26 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:31.274925Z","level":"info","event":"✅ Uploaded chunk 26 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:32.538824Z","level":"info","event":"📌 Loading chunk 27 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:34.384155Z","level":"info","event":"✅ Uploaded chunk 27 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:34.954777Z","level":"info","event":"📌 Loading chunk 28 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:35.954187Z","level":"info","event":"✅ Uploaded chunk 28 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:36.314565Z","level":"info","event":"📌 Loading chunk 29 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:36.939503Z","level":"info","event":"✅ Uploaded chunk 29 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:37.362228Z","level":"info","event":"📌 Loading chunk 30 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:38.148573Z","level":"info","event":"✅ Uploaded chunk 30 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:38.559657Z","level":"info","event":"📌 Loading chunk 31 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:39.146121Z","level":"info","event":"✅ Uploaded chunk 31 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:39.387421Z","level":"info","event":"📌 Loading chunk 32 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:39.866446Z","level":"info","event":"✅ Uploaded chunk 32 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:40.106738Z","level":"info","event":"📌 Loading chunk 33 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:40.609412Z","level":"info","event":"✅ Uploaded chunk 33 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:40.906382Z","level":"info","event":"📌 Loading chunk 34 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:41.389554Z","level":"info","event":"✅ Uploaded chunk 34 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:41.521431Z","level":"info","event":"📌 Loading chunk 35 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:42.055775Z","level":"info","event":"✅ Uploaded chunk 35 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:42.491857Z","level":"info","event":"📌 Loading chunk 36 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:43.533181Z","level":"info","event":"✅ Uploaded chunk 36 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:43.810316Z","level":"info","event":"📌 Loading chunk 37 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:44.439270Z","level":"info","event":"✅ Uploaded chunk 37 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:44.752005Z","level":"info","event":"📌 Loading chunk 38 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:45.237805Z","level":"info","event":"✅ Uploaded chunk 38 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:45.481751Z","level":"info","event":"📌 Loading chunk 39 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:45.915482Z","level":"info","event":"✅ Uploaded chunk 39 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:46.135135Z","level":"info","event":"📌 Loading chunk 40 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:46.589043Z","level":"info","event":"✅ Uploaded chunk 40 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:46.865071Z","level":"info","event":"📌 Loading chunk 41 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:47.405780Z","level":"info","event":"✅ Uploaded chunk 41 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:47.572604Z","level":"info","event":"📌 Loading chunk 42 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:48.050757Z","level":"info","event":"✅ Uploaded chunk 42 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:48.291591Z","level":"info","event":"📌 Loading chunk 43 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:48.664486Z","level":"info","event":"✅ Uploaded chunk 43 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:48.942427Z","level":"info","event":"📌 Loading chunk 44 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:49.390852Z","level":"info","event":"✅ Uploaded chunk 44 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:49.607181Z","level":"info","event":"📌 Loading chunk 45 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:50.051730Z","level":"info","event":"✅ Uploaded chunk 45 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:50.248336Z","level":"info","event":"📌 Loading chunk 46 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:50.625096Z","level":"info","event":"✅ Uploaded chunk 46 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:50.964267Z","level":"info","event":"📌 Loading chunk 47 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:51.533504Z","level":"info","event":"✅ Uploaded chunk 47 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:51.935975Z","level":"info","event":"📌 Loading chunk 48 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:52.706990Z","level":"info","event":"✅ Uploaded chunk 48 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:52.896361Z","level":"info","event":"📌 Loading chunk 49 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:53.271848Z","level":"info","event":"✅ Uploaded chunk 49 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:53.514861Z","level":"info","event":"📌 Loading chunk 50 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:54.018062Z","level":"info","event":"✅ Uploaded chunk 50 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:54.171179Z","level":"info","event":"📌 Loading chunk 51 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:54.558300Z","level":"info","event":"✅ Uploaded chunk 51 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:54.750084Z","level":"info","event":"📌 Loading chunk 52 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:55.144463Z","level":"info","event":"✅ Uploaded chunk 52 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:55.408309Z","level":"info","event":"📌 Loading chunk 53 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:55.926911Z","level":"info","event":"✅ Uploaded chunk 53 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:56.209828Z","level":"info","event":"📌 Loading chunk 54 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:56.822350Z","level":"info","event":"✅ Uploaded chunk 54 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:57.116517Z","level":"info","event":"📌 Loading chunk 55 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:57.615508Z","level":"info","event":"✅ Uploaded chunk 55 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:57.936352Z","level":"info","event":"📌 Loading chunk 56 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:58.574547Z","level":"info","event":"✅ Uploaded chunk 56 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:58.799032Z","level":"info","event":"📌 Loading chunk 57 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:59.356882Z","level":"info","event":"✅ Uploaded chunk 57 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:25:59.800574Z","level":"info","event":"📌 Loading chunk 58 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:00.813858Z","level":"info","event":"✅ Uploaded chunk 58 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:01.265387Z","level":"info","event":"📌 Loading chunk 59 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:01.782334Z","level":"info","event":"✅ Uploaded chunk 59 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:02.529274Z","level":"info","event":"📌 Loading chunk 60 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:03.092500Z","level":"info","event":"✅ Uploaded chunk 60 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:03.439262Z","level":"info","event":"📌 Loading chunk 61 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:04.003377Z","level":"info","event":"✅ Uploaded chunk 61 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:04.202853Z","level":"info","event":"📌 Loading chunk 62 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:04.571185Z","level":"info","event":"✅ Uploaded chunk 62 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:04.822035Z","level":"info","event":"📌 Loading chunk 63 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:05.263056Z","level":"info","event":"✅ Uploaded chunk 63 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:05.557520Z","level":"info","event":"📌 Loading chunk 64 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:06.291933Z","level":"info","event":"✅ Uploaded chunk 64 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:06.515918Z","level":"info","event":"📌 Loading chunk 65 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:06.911895Z","level":"info","event":"✅ Uploaded chunk 65 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:07.135553Z","level":"info","event":"📌 Loading chunk 66 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:07.454137Z","level":"info","event":"✅ Uploaded chunk 66 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:07.704322Z","level":"info","event":"📌 Loading chunk 67 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:08.049522Z","level":"info","event":"✅ Uploaded chunk 67 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:08.309198Z","level":"info","event":"📌 Loading chunk 68 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:08.765864Z","level":"info","event":"✅ Uploaded chunk 68 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:09.022437Z","level":"info","event":"📌 Loading chunk 69 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:09.482008Z","level":"info","event":"✅ Uploaded chunk 69 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:09.720098Z","level":"info","event":"📌 Loading chunk 70 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:10.125063Z","level":"info","event":"✅ Uploaded chunk 70 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:10.447578Z","level":"info","event":"📌 Loading chunk 71 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:10.832668Z","level":"info","event":"✅ Uploaded chunk 71 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:11.344658Z","level":"info","event":"📌 Loading chunk 72 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:11.796676Z","level":"info","event":"✅ Uploaded chunk 72 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:12.314608Z","level":"info","event":"📌 Loading chunk 73 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:12.872056Z","level":"info","event":"✅ Uploaded chunk 73 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:13.040749Z","level":"info","event":"📌 Loading chunk 74 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:13.417819Z","level":"info","event":"✅ Uploaded chunk 74 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:13.750566Z","level":"info","event":"📌 Loading chunk 75 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:14.483017Z","level":"info","event":"✅ Uploaded chunk 75 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:14.870030Z","level":"info","event":"📌 Loading chunk 76 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:15.680943Z","level":"info","event":"✅ Uploaded chunk 76 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:16.160937Z","level":"info","event":"📌 Loading chunk 77 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:17.077294Z","level":"info","event":"✅ Uploaded chunk 77 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:17.311487Z","level":"info","event":"📌 Loading chunk 78 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:17.800385Z","level":"info","event":"✅ Uploaded chunk 78 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:18.049115Z","level":"info","event":"📌 Loading chunk 79 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:18.560877Z","level":"info","event":"✅ Uploaded chunk 79 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:18.882250Z","level":"info","event":"📌 Loading chunk 80 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:19.374855Z","level":"info","event":"✅ Uploaded chunk 80 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:19.653863Z","level":"info","event":"📌 Loading chunk 81 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:20.131915Z","level":"info","event":"✅ Uploaded chunk 81 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:20.387232Z","level":"info","event":"📌 Loading chunk 82 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:20.866596Z","level":"info","event":"✅ Uploaded chunk 82 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:21.153812Z","level":"info","event":"📌 Loading chunk 83 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:21.946177Z","level":"info","event":"✅ Uploaded chunk 83 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:22.718658Z","level":"info","event":"📌 Loading chunk 84 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:23.555340Z","level":"info","event":"✅ Uploaded chunk 84 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:24.081612Z","level":"info","event":"📌 Loading chunk 85 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:25.129280Z","level":"info","event":"✅ Uploaded chunk 85 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:25.384955Z","level":"info","event":"📌 Loading chunk 86 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:25.819100Z","level":"info","event":"✅ Uploaded chunk 86 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:26.042548Z","level":"info","event":"📌 Loading chunk 87 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:26.488009Z","level":"info","event":"✅ Uploaded chunk 87 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:26.844638Z","level":"info","event":"📌 Loading chunk 88 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:27.633710Z","level":"info","event":"✅ Uploaded chunk 88 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:28.101696Z","level":"info","event":"📌 Loading chunk 89 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:28.905906Z","level":"info","event":"✅ Uploaded chunk 89 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:29.189856Z","level":"info","event":"📌 Loading chunk 90 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:29.909765Z","level":"info","event":"✅ Uploaded chunk 90 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:30.235903Z","level":"info","event":"📌 Loading chunk 91 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:30.756600Z","level":"info","event":"✅ Uploaded chunk 91 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:31.045290Z","level":"info","event":"📌 Loading chunk 92 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:31.597366Z","level":"info","event":"✅ Uploaded chunk 92 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:31.847796Z","level":"info","event":"📌 Loading chunk 93 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:32.601127Z","level":"info","event":"✅ Uploaded chunk 93 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:32.782839Z","level":"info","event":"📌 Loading chunk 94 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:33.418242Z","level":"info","event":"✅ Uploaded chunk 94 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:33.676429Z","level":"info","event":"📌 Loading chunk 95 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:34.114319Z","level":"info","event":"✅ Uploaded chunk 95 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:34.399765Z","level":"info","event":"📌 Loading chunk 96 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:35.128196Z","level":"info","event":"✅ Uploaded chunk 96 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:35.436845Z","level":"info","event":"📌 Loading chunk 97 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:35.960814Z","level":"info","event":"✅ Uploaded chunk 97 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:36.161341Z","level":"info","event":"📌 Loading chunk 98 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:37.916472Z","level":"info","event":"✅ Uploaded chunk 98 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:37.917303Z","level":"info","event":"📌 Loading chunk 99 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:37.918238Z","level":"info","event":"✅ Uploaded chunk 99 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:38.042558Z","level":"info","event":"📌 Loading chunk 100 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:38.528429Z","level":"info","event":"✅ Uploaded chunk 100 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:38.887397Z","level":"info","event":"📌 Loading chunk 101 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:39.324130Z","level":"info","event":"✅ Uploaded chunk 101 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:39.534661Z","level":"info","event":"📌 Loading chunk 102 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:39.886395Z","level":"info","event":"✅ Uploaded chunk 102 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:40.046668Z","level":"info","event":"📌 Loading chunk 103 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:40.561358Z","level":"info","event":"✅ Uploaded chunk 103 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:40.836044Z","level":"info","event":"📌 Loading chunk 104 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:41.303295Z","level":"info","event":"✅ Uploaded chunk 104 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:41.492077Z","level":"info","event":"📌 Loading chunk 105 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:41.939420Z","level":"info","event":"✅ Uploaded chunk 105 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:42.260288Z","level":"info","event":"📌 Loading chunk 106 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:42.715785Z","level":"info","event":"✅ Uploaded chunk 106 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:42.929656Z","level":"info","event":"📌 Loading chunk 107 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:43.315254Z","level":"info","event":"✅ Uploaded chunk 107 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:43.509429Z","level":"info","event":"📌 Loading chunk 108 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:43.987190Z","level":"info","event":"✅ Uploaded chunk 108 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:44.212715Z","level":"info","event":"📌 Loading chunk 109 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:44.963070Z","level":"info","event":"✅ Uploaded chunk 109 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:45.239543Z","level":"info","event":"📌 Loading chunk 110 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:45.673818Z","level":"info","event":"✅ Uploaded chunk 110 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:45.870892Z","level":"info","event":"📌 Loading chunk 111 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:46.268858Z","level":"info","event":"✅ Uploaded chunk 111 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:46.581698Z","level":"info","event":"📌 Loading chunk 112 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:46.958561Z","level":"info","event":"✅ Uploaded chunk 112 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:47.210404Z","level":"info","event":"📌 Loading chunk 113 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:47.640727Z","level":"info","event":"✅ Uploaded chunk 113 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:47.907215Z","level":"info","event":"📌 Loading chunk 114 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:49.270764Z","level":"info","event":"✅ Uploaded chunk 114 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:49.687928Z","level":"info","event":"📌 Loading chunk 115 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:50.486600Z","level":"info","event":"✅ Uploaded chunk 115 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:50.955140Z","level":"info","event":"📌 Loading chunk 116 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:51.668535Z","level":"info","event":"✅ Uploaded chunk 116 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:52.205459Z","level":"info","event":"📌 Loading chunk 117 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:53.411907Z","level":"info","event":"✅ Uploaded chunk 117 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:53.898871Z","level":"info","event":"📌 Loading chunk 118 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:55.414895Z","level":"info","event":"✅ Uploaded chunk 118 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:56.202780Z","level":"info","event":"📌 Loading chunk 119 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:57.446219Z","level":"info","event":"✅ Uploaded chunk 119 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:58.385698Z","level":"info","event":"📌 Loading chunk 120 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:26:59.527403Z","level":"info","event":"✅ Uploaded chunk 120 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:00.253368Z","level":"info","event":"📌 Loading chunk 121 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:01.566395Z","level":"info","event":"✅ Uploaded chunk 121 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:02.621922Z","level":"info","event":"📌 Loading chunk 122 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:03.532429Z","level":"info","event":"✅ Uploaded chunk 122 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:03.863291Z","level":"info","event":"📌 Loading chunk 123 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:04.569782Z","level":"info","event":"✅ Uploaded chunk 123 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:04.887713Z","level":"info","event":"📌 Loading chunk 124 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:05.556273Z","level":"info","event":"✅ Uploaded chunk 124 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:06.023050Z","level":"info","event":"📌 Loading chunk 125 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:06.974164Z","level":"info","event":"✅ Uploaded chunk 125 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:07.264443Z","level":"info","event":"📌 Loading chunk 126 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:08.028193Z","level":"info","event":"✅ Uploaded chunk 126 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:08.424675Z","level":"info","event":"📌 Loading chunk 127 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:09.251194Z","level":"info","event":"✅ Uploaded chunk 127 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:09.539581Z","level":"info","event":"📌 Loading chunk 128 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:10.325768Z","level":"info","event":"✅ Uploaded chunk 128 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:10.622318Z","level":"info","event":"📌 Loading chunk 129 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:11.203033Z","level":"info","event":"✅ Uploaded chunk 129 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:11.433219Z","level":"info","event":"📌 Loading chunk 130 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:12.166059Z","level":"info","event":"✅ Uploaded chunk 130 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:12.648547Z","level":"info","event":"📌 Loading chunk 131 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:13.260621Z","level":"info","event":"✅ Uploaded chunk 131 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:13.508805Z","level":"info","event":"📌 Loading chunk 132 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:14.201970Z","level":"info","event":"✅ Uploaded chunk 132 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:14.546131Z","level":"info","event":"📌 Loading chunk 133 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:15.492938Z","level":"info","event":"✅ Uploaded chunk 133 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:15.937307Z","level":"info","event":"📌 Loading chunk 134 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:16.816410Z","level":"info","event":"✅ Uploaded chunk 134 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:17.103201Z","level":"info","event":"📌 Loading chunk 135 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:17.865813Z","level":"info","event":"✅ Uploaded chunk 135 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:18.159277Z","level":"info","event":"📌 Loading chunk 136 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:18.746674Z","level":"info","event":"✅ Uploaded chunk 136 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:19.094396Z","level":"info","event":"📌 Loading chunk 137 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:19.796303Z","level":"info","event":"✅ Uploaded chunk 137 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:20.056713Z","level":"info","event":"📌 Loading chunk 138 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:20.984585Z","level":"info","event":"✅ Uploaded chunk 138 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:21.508170Z","level":"info","event":"📌 Loading chunk 139 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:22.898349Z","level":"info","event":"✅ Uploaded chunk 139 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:23.958515Z","level":"info","event":"📌 Loading chunk 140 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:24.962191Z","level":"info","event":"✅ Uploaded chunk 140 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:25.763501Z","level":"info","event":"📌 Loading chunk 141 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:26.593432Z","level":"info","event":"✅ Uploaded chunk 141 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:27.379542Z","level":"info","event":"📌 Loading chunk 142 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:28.825021Z","level":"info","event":"✅ Uploaded chunk 142 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:29.186256Z","level":"info","event":"📌 Loading chunk 143 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:29.894058Z","level":"info","event":"✅ Uploaded chunk 143 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:30.297956Z","level":"info","event":"📌 Loading chunk 144 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:31.509621Z","level":"info","event":"✅ Uploaded chunk 144 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:32.305011Z","level":"info","event":"📌 Loading chunk 145 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:33.560323Z","level":"info","event":"✅ Uploaded chunk 145 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:33.957123Z","level":"info","event":"📌 Loading chunk 146 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:34.951598Z","level":"info","event":"✅ Uploaded chunk 146 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:35.376180Z","level":"info","event":"📌 Loading chunk 147 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:36.344223Z","level":"info","event":"✅ Uploaded chunk 147 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:36.882463Z","level":"info","event":"📌 Loading chunk 148 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:37.533323Z","level":"info","event":"✅ Uploaded chunk 148 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:37.839878Z","level":"info","event":"📌 Loading chunk 149 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:38.762420Z","level":"info","event":"✅ Uploaded chunk 149 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:39.108978Z","level":"info","event":"📌 Loading chunk 150 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:40.289570Z","level":"info","event":"✅ Uploaded chunk 150 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:41.052409Z","level":"info","event":"📌 Loading chunk 151 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:42.952870Z","level":"info","event":"✅ Uploaded chunk 151 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:43.491509Z","level":"info","event":"📌 Loading chunk 152 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:44.169863Z","level":"info","event":"✅ Uploaded chunk 152 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:44.366002Z","level":"info","event":"📌 Loading chunk 153 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:45.041090Z","level":"info","event":"✅ Uploaded chunk 153 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:45.561931Z","level":"info","event":"📌 Loading chunk 154 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:46.094953Z","level":"info","event":"✅ Uploaded chunk 154 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:46.354053Z","level":"info","event":"📌 Loading chunk 155 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:46.890013Z","level":"info","event":"✅ Uploaded chunk 155 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:47.144036Z","level":"info","event":"📌 Loading chunk 156 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:47.576750Z","level":"info","event":"✅ Uploaded chunk 156 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:47.775051Z","level":"info","event":"📌 Loading chunk 157 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:48.137859Z","level":"info","event":"✅ Uploaded chunk 157 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:48.543104Z","level":"info","event":"📌 Loading chunk 158 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:49.155522Z","level":"info","event":"✅ Uploaded chunk 158 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:49.396919Z","level":"info","event":"📌 Loading chunk 159 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:49.921744Z","level":"info","event":"✅ Uploaded chunk 159 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:50.087578Z","level":"info","event":"📌 Loading chunk 160 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:50.519583Z","level":"info","event":"✅ Uploaded chunk 160 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:50.713692Z","level":"info","event":"📌 Loading chunk 161 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:51.114322Z","level":"info","event":"✅ Uploaded chunk 161 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:51.300646Z","level":"info","event":"📌 Loading chunk 162 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:51.792442Z","level":"info","event":"✅ Uploaded chunk 162 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:52.083066Z","level":"info","event":"📌 Loading chunk 163 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:52.679467Z","level":"info","event":"✅ Uploaded chunk 163 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:52.831464Z","level":"info","event":"📌 Loading chunk 164 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:53.236774Z","level":"info","event":"✅ Uploaded chunk 164 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:53.438212Z","level":"info","event":"📌 Loading chunk 165 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:53.920849Z","level":"info","event":"✅ Uploaded chunk 165 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:54.123972Z","level":"info","event":"📌 Loading chunk 166 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:54.479339Z","level":"info","event":"✅ Uploaded chunk 166 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:54.635153Z","level":"info","event":"📌 Loading chunk 167 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:55.023133Z","level":"info","event":"✅ Uploaded chunk 167 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:55.181764Z","level":"info","event":"📌 Loading chunk 168 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:55.591941Z","level":"info","event":"✅ Uploaded chunk 168 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:55.737157Z","level":"info","event":"📌 Loading chunk 169 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:56.014173Z","level":"info","event":"✅ Uploaded chunk 169 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:56.130911Z","level":"info","event":"📌 Loading chunk 170 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:56.481885Z","level":"info","event":"✅ Uploaded chunk 170 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:56.675166Z","level":"info","event":"📌 Loading chunk 171 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:57.143750Z","level":"info","event":"✅ Uploaded chunk 171 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:57.680598Z","level":"info","event":"📌 Loading chunk 172 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:58.049598Z","level":"info","event":"✅ Uploaded chunk 172 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:58.334231Z","level":"info","event":"📌 Loading chunk 173 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:58.841825Z","level":"info","event":"✅ Uploaded chunk 173 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:58.994263Z","level":"info","event":"📌 Loading chunk 174 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:59.372854Z","level":"info","event":"✅ Uploaded chunk 174 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:59.503550Z","level":"info","event":"📌 Loading chunk 175 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:59.813559Z","level":"info","event":"✅ Uploaded chunk 175 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:27:59.946521Z","level":"info","event":"📌 Loading chunk 176 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:00.256802Z","level":"info","event":"✅ Uploaded chunk 176 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:00.452112Z","level":"info","event":"📌 Loading chunk 177 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:00.888290Z","level":"info","event":"✅ Uploaded chunk 177 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:01.051142Z","level":"info","event":"📌 Loading chunk 178 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:01.436227Z","level":"info","event":"✅ Uploaded chunk 178 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:01.638591Z","level":"info","event":"📌 Loading chunk 179 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:02.251954Z","level":"info","event":"✅ Uploaded chunk 179 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:02.588822Z","level":"info","event":"📌 Loading chunk 180 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:03.092646Z","level":"info","event":"✅ Uploaded chunk 180 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:03.214566Z","level":"info","event":"📌 Loading chunk 181 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:03.541945Z","level":"info","event":"✅ Uploaded chunk 181 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:03.679815Z","level":"info","event":"📌 Loading chunk 182 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:04.042497Z","level":"info","event":"✅ Uploaded chunk 182 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:04.202876Z","level":"info","event":"📌 Loading chunk 183 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:04.536336Z","level":"info","event":"✅ Uploaded chunk 183 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:04.698435Z","level":"info","event":"📌 Loading chunk 184 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:04.971958Z","level":"info","event":"✅ Uploaded chunk 184 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:05.148395Z","level":"info","event":"📌 Loading chunk 185 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:05.532577Z","level":"info","event":"✅ Uploaded chunk 185 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:05.646778Z","level":"info","event":"📌 Loading chunk 186 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:05.963562Z","level":"info","event":"✅ Uploaded chunk 186 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:06.115256Z","level":"info","event":"📌 Loading chunk 187 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:06.460165Z","level":"info","event":"✅ Uploaded chunk 187 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:06.644541Z","level":"info","event":"📌 Loading chunk 188 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:06.964357Z","level":"info","event":"✅ Uploaded chunk 188 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:07.114975Z","level":"info","event":"📌 Loading chunk 189 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:07.586366Z","level":"info","event":"✅ Uploaded chunk 189 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:07.754749Z","level":"info","event":"📌 Loading chunk 190 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:08.100641Z","level":"info","event":"✅ Uploaded chunk 190 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:08.329005Z","level":"info","event":"📌 Loading chunk 191 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:08.761865Z","level":"info","event":"✅ Uploaded chunk 191 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:08.950227Z","level":"info","event":"📌 Loading chunk 192 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:09.326308Z","level":"info","event":"✅ Uploaded chunk 192 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:09.537989Z","level":"info","event":"📌 Loading chunk 193 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:09.911848Z","level":"info","event":"✅ Uploaded chunk 193 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:10.290944Z","level":"info","event":"📌 Loading chunk 194 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:11.160352Z","level":"info","event":"✅ Uploaded chunk 194 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:11.427705Z","level":"info","event":"📌 Loading chunk 195 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:11.839716Z","level":"info","event":"✅ Uploaded chunk 195 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:12.348581Z","level":"info","event":"📌 Loading chunk 196 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:13.138401Z","level":"info","event":"✅ Uploaded chunk 196 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:13.393737Z","level":"info","event":"📌 Loading chunk 197 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:13.950694Z","level":"info","event":"✅ Uploaded chunk 197 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:14.392086Z","level":"info","event":"📌 Loading chunk 198 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:15.019879Z","level":"info","event":"✅ Uploaded chunk 198 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:15.481997Z","level":"info","event":"📌 Loading chunk 199 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:16.470400Z","level":"info","event":"✅ Uploaded chunk 199 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:16.822405Z","level":"info","event":"📌 Loading chunk 200 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:17.263540Z","level":"info","event":"✅ Uploaded chunk 200 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:17.448805Z","level":"info","event":"📌 Loading chunk 201 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:17.864580Z","level":"info","event":"✅ Uploaded chunk 201 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:18.013912Z","level":"info","event":"📌 Loading chunk 202 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:18.386608Z","level":"info","event":"✅ Uploaded chunk 202 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:18.543617Z","level":"info","event":"📌 Loading chunk 203 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:18.959268Z","level":"info","event":"✅ Uploaded chunk 203 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:19.119600Z","level":"info","event":"📌 Loading chunk 204 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:19.566679Z","level":"info","event":"✅ Uploaded chunk 204 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:19.784119Z","level":"info","event":"📌 Loading chunk 205 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:20.123258Z","level":"info","event":"✅ Uploaded chunk 205 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:20.261609Z","level":"info","event":"📌 Loading chunk 206 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:20.555664Z","level":"info","event":"✅ Uploaded chunk 206 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:20.688158Z","level":"info","event":"📌 Loading chunk 207 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:21.056369Z","level":"info","event":"✅ Uploaded chunk 207 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:21.193196Z","level":"info","event":"📌 Loading chunk 208 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:21.473976Z","level":"info","event":"✅ Uploaded chunk 208 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:21.615936Z","level":"info","event":"📌 Loading chunk 209 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:21.991038Z","level":"info","event":"✅ Uploaded chunk 209 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:22.372769Z","level":"info","event":"📌 Loading chunk 210 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:22.875690Z","level":"info","event":"✅ Uploaded chunk 210 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:23.022763Z","level":"info","event":"📌 Loading chunk 211 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:23.364612Z","level":"info","event":"✅ Uploaded chunk 211 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:23.570687Z","level":"info","event":"📌 Loading chunk 212 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:23.900035Z","level":"info","event":"✅ Uploaded chunk 212 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:24.022016Z","level":"info","event":"📌 Loading chunk 213 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:24.284717Z","level":"info","event":"✅ Uploaded chunk 213 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:24.437026Z","level":"info","event":"📌 Loading chunk 214 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:24.803436Z","level":"info","event":"✅ Uploaded chunk 214 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:24.914511Z","level":"info","event":"📌 Loading chunk 215 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:25.224967Z","level":"info","event":"✅ Uploaded chunk 215 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:25.418899Z","level":"info","event":"📌 Loading chunk 216 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:25.853522Z","level":"info","event":"✅ Uploaded chunk 216 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:26.029787Z","level":"info","event":"📌 Loading chunk 217 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:26.369975Z","level":"info","event":"✅ Uploaded chunk 217 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:26.496116Z","level":"info","event":"📌 Loading chunk 218 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:26.838943Z","level":"info","event":"✅ Uploaded chunk 218 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:26.971656Z","level":"info","event":"📌 Loading chunk 219 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:27.257828Z","level":"info","event":"✅ Uploaded chunk 219 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:27.392400Z","level":"info","event":"📌 Loading chunk 220 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:27.670080Z","level":"info","event":"✅ Uploaded chunk 220 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:27.849647Z","level":"info","event":"📌 Loading chunk 221 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:28.311195Z","level":"info","event":"✅ Uploaded chunk 221 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:28.453777Z","level":"info","event":"📌 Loading chunk 222 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:28.910207Z","level":"info","event":"✅ Uploaded chunk 222 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:29.286322Z","level":"info","event":"📌 Loading chunk 223 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:30.109850Z","level":"info","event":"✅ Uploaded chunk 223 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:30.495479Z","level":"info","event":"📌 Loading chunk 224 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:31.051866Z","level":"info","event":"✅ Uploaded chunk 224 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:31.637460Z","level":"info","event":"📌 Loading chunk 225 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:32.534582Z","level":"info","event":"✅ Uploaded chunk 225 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:33.038331Z","level":"info","event":"📌 Loading chunk 226 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:33.567827Z","level":"info","event":"✅ Uploaded chunk 226 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:33.729418Z","level":"info","event":"📌 Loading chunk 227 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:34.086040Z","level":"info","event":"✅ Uploaded chunk 227 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:34.293294Z","level":"info","event":"📌 Loading chunk 228 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:34.698041Z","level":"info","event":"✅ Uploaded chunk 228 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:34.933514Z","level":"info","event":"📌 Loading chunk 229 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:35.370721Z","level":"info","event":"✅ Uploaded chunk 229 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:35.606117Z","level":"info","event":"📌 Loading chunk 230 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:36.134583Z","level":"info","event":"✅ Uploaded chunk 230 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:36.321985Z","level":"info","event":"📌 Loading chunk 231 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:36.681631Z","level":"info","event":"✅ Uploaded chunk 231 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:36.851521Z","level":"info","event":"📌 Loading chunk 232 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:37.134235Z","level":"info","event":"✅ Uploaded chunk 232 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:37.259401Z","level":"info","event":"📌 Loading chunk 233 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:37.597477Z","level":"info","event":"✅ Uploaded chunk 233 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:37.862567Z","level":"info","event":"📌 Loading chunk 234 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:39.756982Z","level":"info","event":"✅ Uploaded chunk 234 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:40.126708Z","level":"info","event":"📌 Loading chunk 235 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:40.880291Z","level":"info","event":"✅ Uploaded chunk 235 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:41.081490Z","level":"info","event":"📌 Loading chunk 236 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:41.623875Z","level":"info","event":"✅ Uploaded chunk 236 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:41.818901Z","level":"info","event":"📌 Loading chunk 237 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:42.880536Z","level":"info","event":"✅ Uploaded chunk 237 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:43.171758Z","level":"info","event":"📌 Loading chunk 238 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:43.864039Z","level":"info","event":"✅ Uploaded chunk 238 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:44.093920Z","level":"info","event":"📌 Loading chunk 239 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:44.525179Z","level":"info","event":"✅ Uploaded chunk 239 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:44.783434Z","level":"info","event":"📌 Loading chunk 240 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:45.192712Z","level":"info","event":"✅ Uploaded chunk 240 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:45.359864Z","level":"info","event":"📌 Loading chunk 241 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:45.739005Z","level":"info","event":"✅ Uploaded chunk 241 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:45.960539Z","level":"info","event":"📌 Loading chunk 242 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:46.512554Z","level":"info","event":"✅ Uploaded chunk 242 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:46.850269Z","level":"info","event":"📌 Loading chunk 243 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:47.659720Z","level":"info","event":"✅ Uploaded chunk 243 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:48.051861Z","level":"info","event":"📌 Loading chunk 244 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:49.012802Z","level":"info","event":"✅ Uploaded chunk 244 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:49.755807Z","level":"info","event":"📌 Loading chunk 245 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:50.731447Z","level":"info","event":"✅ Uploaded chunk 245 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:51.179116Z","level":"info","event":"📌 Loading chunk 246 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:52.024926Z","level":"info","event":"✅ Uploaded chunk 246 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:52.864727Z","level":"info","event":"📌 Loading chunk 247 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:53.742682Z","level":"info","event":"✅ Uploaded chunk 247 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:54.161053Z","level":"info","event":"📌 Loading chunk 248 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:55.639316Z","level":"info","event":"✅ Uploaded chunk 248 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:56.005639Z","level":"info","event":"📌 Loading chunk 249 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:57.057720Z","level":"info","event":"✅ Uploaded chunk 249 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:57.735850Z","level":"info","event":"📌 Loading chunk 250 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:58.457525Z","level":"info","event":"✅ Uploaded chunk 250 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:58.804900Z","level":"info","event":"📌 Loading chunk 251 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:59.422254Z","level":"info","event":"✅ Uploaded chunk 251 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:28:59.834891Z","level":"info","event":"📌 Loading chunk 252 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:00.458219Z","level":"info","event":"✅ Uploaded chunk 252 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:00.845577Z","level":"info","event":"📌 Loading chunk 253 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:01.328584Z","level":"info","event":"✅ Uploaded chunk 253 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:01.579884Z","level":"info","event":"📌 Loading chunk 254 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:02.264578Z","level":"info","event":"✅ Uploaded chunk 254 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:02.761863Z","level":"info","event":"📌 Loading chunk 255 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:03.244757Z","level":"info","event":"✅ Uploaded chunk 255 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:03.437898Z","level":"info","event":"📌 Loading chunk 256 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:03.741509Z","level":"info","event":"✅ Uploaded chunk 256 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:04.136318Z","level":"info","event":"📌 Loading chunk 257 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:05.039515Z","level":"info","event":"✅ Uploaded chunk 257 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:05.676670Z","level":"info","event":"📌 Loading chunk 258 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:06.894145Z","level":"info","event":"✅ Uploaded chunk 258 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:07.198490Z","level":"info","event":"📌 Loading chunk 259 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:07.885116Z","level":"info","event":"✅ Uploaded chunk 259 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:08.193576Z","level":"info","event":"📌 Loading chunk 260 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:08.664200Z","level":"info","event":"✅ Uploaded chunk 260 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:08.966197Z","level":"info","event":"📌 Loading chunk 261 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:09.479437Z","level":"info","event":"✅ Uploaded chunk 261 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:09.740407Z","level":"info","event":"📌 Loading chunk 262 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:10.155411Z","level":"info","event":"✅ Uploaded chunk 262 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:10.381808Z","level":"info","event":"📌 Loading chunk 263 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:10.718536Z","level":"info","event":"✅ Uploaded chunk 263 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:10.936273Z","level":"info","event":"📌 Loading chunk 264 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:11.230284Z","level":"info","event":"✅ Uploaded chunk 264 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:11.344447Z","level":"info","event":"📌 Loading chunk 265 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:11.661170Z","level":"info","event":"✅ Uploaded chunk 265 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:11.805850Z","level":"info","event":"📌 Loading chunk 266 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:12.169727Z","level":"info","event":"✅ Uploaded chunk 266 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:12.528287Z","level":"info","event":"📌 Loading chunk 267 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:12.968678Z","level":"info","event":"✅ Uploaded chunk 267 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:13.126450Z","level":"info","event":"📌 Loading chunk 268 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:13.497564Z","level":"info","event":"✅ Uploaded chunk 268 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:13.701648Z","level":"info","event":"📌 Loading chunk 269 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:14.235439Z","level":"info","event":"✅ Uploaded chunk 269 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:14.498891Z","level":"info","event":"📌 Loading chunk 270 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:14.983404Z","level":"info","event":"✅ Uploaded chunk 270 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:15.183573Z","level":"info","event":"📌 Loading chunk 271 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:15.595338Z","level":"info","event":"✅ Uploaded chunk 271 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:15.773075Z","level":"info","event":"📌 Loading chunk 272 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:16.140095Z","level":"info","event":"✅ Uploaded chunk 272 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:16.358562Z","level":"info","event":"📌 Loading chunk 273 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:16.727155Z","level":"info","event":"✅ Uploaded chunk 273 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:17.017445Z","level":"info","event":"📌 Loading chunk 274 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:17.626770Z","level":"info","event":"✅ Uploaded chunk 274 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:17.854521Z","level":"info","event":"📌 Loading chunk 275 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:18.265040Z","level":"info","event":"✅ Uploaded chunk 275 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:18.419788Z","level":"info","event":"📌 Loading chunk 276 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:18.740251Z","level":"info","event":"✅ Uploaded chunk 276 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:19.143044Z","level":"info","event":"📌 Loading chunk 277 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:19.582593Z","level":"info","event":"✅ Uploaded chunk 277 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:19.786709Z","level":"info","event":"📌 Loading chunk 278 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:20.249310Z","level":"info","event":"✅ Uploaded chunk 278 with 5000 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:20.327162Z","level":"info","event":"📌 Loading chunk 279 into table: nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:20.455811Z","level":"info","event":"✅ Uploaded chunk 279 with 1437 rows into nationwide_home_sales_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:20.463823","level":"warning","event":"No Host Key Verification. This won't protect against Man-In-The-Middle attacks","logger":"airflow.task.hooks.airflow.providers.sftp.hooks.sftp.SFTPHook"}
+{"timestamp":"2025-08-26T16:29:20.605060","level":"info","event":"Connected (version 2.0, client 1.82_sshlib)","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:29:20.869024","level":"info","event":"Auth banner: b'If you experience issues connecting to ftp2.resftp.com site please contact customer support at 866-440-7449'","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:29:20.921921","level":"info","event":"Authentication (password) successful!","logger":"paramiko.transport"}
+{"timestamp":"2025-08-26T16:29:21.035379","level":"info","event":"[chan 0] Opened sftp connection (server version 3)","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-26T16:29:25.374603","level":"info","event":"[chan 0] sftp session closed.","logger":"paramiko.transport.sftp"}
+{"timestamp":"2025-08-26T16:29:25.396375Z","level":"info","event":"✅ Downloaded MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip → /tmp/sftp_downloads/MarcusMillichap_0000757_FCL_Activity_Report_20250801.zip","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.369622Z","level":"info","event":"📌 Loading chunk 0 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.513592Z","level":"info","event":"✅ Uploaded chunk 0 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.533526Z","level":"info","event":"📌 Loading chunk 1 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.626893Z","level":"info","event":"✅ Uploaded chunk 1 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.643843Z","level":"info","event":"📌 Loading chunk 2 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.773134Z","level":"info","event":"✅ Uploaded chunk 2 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.798727Z","level":"info","event":"📌 Loading chunk 3 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.931759Z","level":"info","event":"✅ Uploaded chunk 3 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:26.956144Z","level":"info","event":"📌 Loading chunk 4 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.082986Z","level":"info","event":"✅ Uploaded chunk 4 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.109240Z","level":"info","event":"📌 Loading chunk 5 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.227757Z","level":"info","event":"✅ Uploaded chunk 5 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.251394Z","level":"info","event":"📌 Loading chunk 6 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.437788Z","level":"info","event":"✅ Uploaded chunk 6 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.477638Z","level":"info","event":"📌 Loading chunk 7 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.632688Z","level":"info","event":"✅ Uploaded chunk 7 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.675744Z","level":"info","event":"📌 Loading chunk 8 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.876238Z","level":"info","event":"✅ Uploaded chunk 8 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:27.914232Z","level":"info","event":"📌 Loading chunk 9 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.086020Z","level":"info","event":"✅ Uploaded chunk 9 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.131309Z","level":"info","event":"📌 Loading chunk 10 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.326720Z","level":"info","event":"✅ Uploaded chunk 10 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.377331Z","level":"info","event":"📌 Loading chunk 11 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.583425Z","level":"info","event":"✅ Uploaded chunk 11 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.633724Z","level":"info","event":"📌 Loading chunk 12 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.922663Z","level":"info","event":"✅ Uploaded chunk 12 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:28.981694Z","level":"info","event":"📌 Loading chunk 13 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.186807Z","level":"info","event":"✅ Uploaded chunk 13 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.234541Z","level":"info","event":"📌 Loading chunk 14 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.465185Z","level":"info","event":"✅ Uploaded chunk 14 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.507585Z","level":"info","event":"📌 Loading chunk 15 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.772821Z","level":"info","event":"✅ Uploaded chunk 15 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:29.805565Z","level":"info","event":"📌 Loading chunk 16 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.029174Z","level":"info","event":"✅ Uploaded chunk 16 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.070573Z","level":"info","event":"📌 Loading chunk 17 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.280955Z","level":"info","event":"✅ Uploaded chunk 17 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.316336Z","level":"info","event":"📌 Loading chunk 18 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.661506Z","level":"info","event":"✅ Uploaded chunk 18 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:30.723355Z","level":"info","event":"📌 Loading chunk 19 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:31.277513Z","level":"info","event":"✅ Uploaded chunk 19 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:31.370745Z","level":"info","event":"📌 Loading chunk 20 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:31.976301Z","level":"info","event":"✅ Uploaded chunk 20 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:32.100066Z","level":"info","event":"📌 Loading chunk 21 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:32.809620Z","level":"info","event":"✅ Uploaded chunk 21 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:32.876916Z","level":"info","event":"📌 Loading chunk 22 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:33.475139Z","level":"info","event":"✅ Uploaded chunk 22 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:33.550448Z","level":"info","event":"📌 Loading chunk 23 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:33.832419Z","level":"info","event":"✅ Uploaded chunk 23 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:33.882714Z","level":"info","event":"📌 Loading chunk 24 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.145910Z","level":"info","event":"✅ Uploaded chunk 24 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.210398Z","level":"info","event":"📌 Loading chunk 25 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.463813Z","level":"info","event":"✅ Uploaded chunk 25 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.503928Z","level":"info","event":"📌 Loading chunk 26 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.858867Z","level":"info","event":"✅ Uploaded chunk 26 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:34.929858Z","level":"info","event":"📌 Loading chunk 27 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.331990Z","level":"info","event":"✅ Uploaded chunk 27 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.383560Z","level":"info","event":"📌 Loading chunk 28 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.554468Z","level":"info","event":"✅ Uploaded chunk 28 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.605904Z","level":"info","event":"📌 Loading chunk 29 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.860067Z","level":"info","event":"✅ Uploaded chunk 29 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:35.934683Z","level":"info","event":"📌 Loading chunk 30 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.146209Z","level":"info","event":"✅ Uploaded chunk 30 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.203215Z","level":"info","event":"📌 Loading chunk 31 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.425578Z","level":"info","event":"✅ Uploaded chunk 31 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.486090Z","level":"info","event":"📌 Loading chunk 32 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.767789Z","level":"info","event":"✅ Uploaded chunk 32 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:36.842099Z","level":"info","event":"📌 Loading chunk 33 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.179612Z","level":"info","event":"✅ Uploaded chunk 33 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.212315Z","level":"info","event":"📌 Loading chunk 34 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.449451Z","level":"info","event":"✅ Uploaded chunk 34 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.488693Z","level":"info","event":"📌 Loading chunk 35 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.769890Z","level":"info","event":"✅ Uploaded chunk 35 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:37.812858Z","level":"info","event":"📌 Loading chunk 36 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.094379Z","level":"info","event":"✅ Uploaded chunk 36 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.149603Z","level":"info","event":"📌 Loading chunk 37 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.385664Z","level":"info","event":"✅ Uploaded chunk 37 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.417836Z","level":"info","event":"📌 Loading chunk 38 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.651511Z","level":"info","event":"✅ Uploaded chunk 38 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.714159Z","level":"info","event":"📌 Loading chunk 39 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:38.977755Z","level":"info","event":"✅ Uploaded chunk 39 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:39.021245Z","level":"info","event":"📌 Loading chunk 40 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:39.245296Z","level":"info","event":"✅ Uploaded chunk 40 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:39.301584Z","level":"info","event":"📌 Loading chunk 41 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:40.189283Z","level":"info","event":"✅ Uploaded chunk 41 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:40.250057Z","level":"info","event":"📌 Loading chunk 42 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:40.576883Z","level":"info","event":"✅ Uploaded chunk 42 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:40.634361Z","level":"info","event":"📌 Loading chunk 43 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:40.881965Z","level":"info","event":"✅ Uploaded chunk 43 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:41.210087Z","level":"info","event":"📌 Loading chunk 44 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:41.238002Z","level":"info","event":"✅ Uploaded chunk 44 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:41.284226Z","level":"info","event":"📌 Loading chunk 45 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:41.581245Z","level":"info","event":"✅ Uploaded chunk 45 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:41.652203Z","level":"info","event":"📌 Loading chunk 46 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:42.980715Z","level":"info","event":"✅ Uploaded chunk 46 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.047057Z","level":"info","event":"📌 Loading chunk 47 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.329669Z","level":"info","event":"✅ Uploaded chunk 47 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.379984Z","level":"info","event":"📌 Loading chunk 48 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.636147Z","level":"info","event":"✅ Uploaded chunk 48 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.679522Z","level":"info","event":"📌 Loading chunk 49 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.945035Z","level":"info","event":"✅ Uploaded chunk 49 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:43.998789Z","level":"info","event":"📌 Loading chunk 50 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:44.309297Z","level":"info","event":"✅ Uploaded chunk 50 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:44.383087Z","level":"info","event":"📌 Loading chunk 51 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:44.647006Z","level":"info","event":"✅ Uploaded chunk 51 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:44.712557Z","level":"info","event":"📌 Loading chunk 52 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.075420Z","level":"info","event":"✅ Uploaded chunk 52 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.119621Z","level":"info","event":"📌 Loading chunk 53 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.405832Z","level":"info","event":"✅ Uploaded chunk 53 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.453640Z","level":"info","event":"📌 Loading chunk 54 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.824915Z","level":"info","event":"✅ Uploaded chunk 54 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:45.920507Z","level":"info","event":"📌 Loading chunk 55 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:46.235678Z","level":"info","event":"✅ Uploaded chunk 55 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:46.307419Z","level":"info","event":"📌 Loading chunk 56 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:46.563458Z","level":"info","event":"✅ Uploaded chunk 56 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:46.622692Z","level":"info","event":"📌 Loading chunk 57 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:46.958463Z","level":"info","event":"✅ Uploaded chunk 57 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.016016Z","level":"info","event":"📌 Loading chunk 58 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.330124Z","level":"info","event":"✅ Uploaded chunk 58 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.393753Z","level":"info","event":"📌 Loading chunk 59 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.637579Z","level":"info","event":"✅ Uploaded chunk 59 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.691155Z","level":"info","event":"📌 Loading chunk 60 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:47.970682Z","level":"info","event":"✅ Uploaded chunk 60 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.010703Z","level":"info","event":"📌 Loading chunk 61 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.224416Z","level":"info","event":"✅ Uploaded chunk 61 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.267592Z","level":"info","event":"📌 Loading chunk 62 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.522938Z","level":"info","event":"✅ Uploaded chunk 62 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.576688Z","level":"info","event":"📌 Loading chunk 63 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.784969Z","level":"info","event":"✅ Uploaded chunk 63 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:48.853441Z","level":"info","event":"📌 Loading chunk 64 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.148639Z","level":"info","event":"✅ Uploaded chunk 64 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.190290Z","level":"info","event":"📌 Loading chunk 65 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.354704Z","level":"info","event":"✅ Uploaded chunk 65 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.394278Z","level":"info","event":"📌 Loading chunk 66 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.573532Z","level":"info","event":"✅ Uploaded chunk 66 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.609206Z","level":"info","event":"📌 Loading chunk 67 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.796739Z","level":"info","event":"✅ Uploaded chunk 67 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:49.833686Z","level":"info","event":"📌 Loading chunk 68 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.023317Z","level":"info","event":"✅ Uploaded chunk 68 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.068994Z","level":"info","event":"📌 Loading chunk 69 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.278623Z","level":"info","event":"✅ Uploaded chunk 69 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.326524Z","level":"info","event":"📌 Loading chunk 70 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.482933Z","level":"info","event":"✅ Uploaded chunk 70 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.525616Z","level":"info","event":"📌 Loading chunk 71 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.720308Z","level":"info","event":"✅ Uploaded chunk 71 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.753200Z","level":"info","event":"📌 Loading chunk 72 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.910593Z","level":"info","event":"✅ Uploaded chunk 72 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:50.949219Z","level":"info","event":"📌 Loading chunk 73 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.139007Z","level":"info","event":"✅ Uploaded chunk 73 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.169302Z","level":"info","event":"📌 Loading chunk 74 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.391997Z","level":"info","event":"✅ Uploaded chunk 74 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.427428Z","level":"info","event":"📌 Loading chunk 75 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.633622Z","level":"info","event":"✅ Uploaded chunk 75 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.662848Z","level":"info","event":"📌 Loading chunk 76 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.875323Z","level":"info","event":"✅ Uploaded chunk 76 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:51.898394Z","level":"info","event":"📌 Loading chunk 77 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:52.221864Z","level":"info","event":"✅ Uploaded chunk 77 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:52.326755Z","level":"info","event":"📌 Loading chunk 78 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:52.719258Z","level":"info","event":"✅ Uploaded chunk 78 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:52.799265Z","level":"info","event":"📌 Loading chunk 79 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.114732Z","level":"info","event":"✅ Uploaded chunk 79 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.152427Z","level":"info","event":"📌 Loading chunk 80 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.343980Z","level":"info","event":"✅ Uploaded chunk 80 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.382136Z","level":"info","event":"📌 Loading chunk 81 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.538762Z","level":"info","event":"✅ Uploaded chunk 81 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.567608Z","level":"info","event":"📌 Loading chunk 82 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.744461Z","level":"info","event":"✅ Uploaded chunk 82 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.767118Z","level":"info","event":"📌 Loading chunk 83 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.905397Z","level":"info","event":"✅ Uploaded chunk 83 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:53.933633Z","level":"info","event":"📌 Loading chunk 84 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.096300Z","level":"info","event":"✅ Uploaded chunk 84 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.116436Z","level":"info","event":"📌 Loading chunk 85 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.250731Z","level":"info","event":"✅ Uploaded chunk 85 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.289921Z","level":"info","event":"📌 Loading chunk 86 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.450133Z","level":"info","event":"✅ Uploaded chunk 86 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.474719Z","level":"info","event":"📌 Loading chunk 87 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.597021Z","level":"info","event":"✅ Uploaded chunk 87 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.616622Z","level":"info","event":"📌 Loading chunk 88 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.762937Z","level":"info","event":"✅ Uploaded chunk 88 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.800438Z","level":"info","event":"📌 Loading chunk 89 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.960791Z","level":"info","event":"✅ Uploaded chunk 89 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:54.982546Z","level":"info","event":"📌 Loading chunk 90 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.133345Z","level":"info","event":"✅ Uploaded chunk 90 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.162064Z","level":"info","event":"📌 Loading chunk 91 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.297318Z","level":"info","event":"✅ Uploaded chunk 91 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.323316Z","level":"info","event":"📌 Loading chunk 92 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.504603Z","level":"info","event":"✅ Uploaded chunk 92 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.562221Z","level":"info","event":"📌 Loading chunk 93 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.783007Z","level":"info","event":"✅ Uploaded chunk 93 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.812638Z","level":"info","event":"📌 Loading chunk 94 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:55.999600Z","level":"info","event":"✅ Uploaded chunk 94 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.046282Z","level":"info","event":"📌 Loading chunk 95 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.218738Z","level":"info","event":"✅ Uploaded chunk 95 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.282497Z","level":"info","event":"📌 Loading chunk 96 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.466697Z","level":"info","event":"✅ Uploaded chunk 96 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.505950Z","level":"info","event":"📌 Loading chunk 97 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.748005Z","level":"info","event":"✅ Uploaded chunk 97 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.779172Z","level":"info","event":"📌 Loading chunk 98 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:56.954362Z","level":"info","event":"✅ Uploaded chunk 98 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.008360Z","level":"info","event":"📌 Loading chunk 99 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.213821Z","level":"info","event":"✅ Uploaded chunk 99 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.273134Z","level":"info","event":"📌 Loading chunk 100 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.471506Z","level":"info","event":"✅ Uploaded chunk 100 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.519128Z","level":"info","event":"📌 Loading chunk 101 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.733149Z","level":"info","event":"✅ Uploaded chunk 101 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.770687Z","level":"info","event":"📌 Loading chunk 102 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.906430Z","level":"info","event":"✅ Uploaded chunk 102 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:57.928350Z","level":"info","event":"📌 Loading chunk 103 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.071095Z","level":"info","event":"✅ Uploaded chunk 103 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.097067Z","level":"info","event":"📌 Loading chunk 104 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.216896Z","level":"info","event":"✅ Uploaded chunk 104 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.244067Z","level":"info","event":"📌 Loading chunk 105 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.402332Z","level":"info","event":"✅ Uploaded chunk 105 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.421797Z","level":"info","event":"📌 Loading chunk 106 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.541942Z","level":"info","event":"✅ Uploaded chunk 106 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.569032Z","level":"info","event":"📌 Loading chunk 107 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.730637Z","level":"info","event":"✅ Uploaded chunk 107 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.752755Z","level":"info","event":"📌 Loading chunk 108 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.870735Z","level":"info","event":"✅ Uploaded chunk 108 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:58.891662Z","level":"info","event":"📌 Loading chunk 109 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.016562Z","level":"info","event":"✅ Uploaded chunk 109 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.050196Z","level":"info","event":"📌 Loading chunk 110 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.192810Z","level":"info","event":"✅ Uploaded chunk 110 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.214853Z","level":"info","event":"📌 Loading chunk 111 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.330148Z","level":"info","event":"✅ Uploaded chunk 111 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.354501Z","level":"info","event":"📌 Loading chunk 112 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.470915Z","level":"info","event":"✅ Uploaded chunk 112 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.511600Z","level":"info","event":"📌 Loading chunk 113 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.664626Z","level":"info","event":"✅ Uploaded chunk 113 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.694375Z","level":"info","event":"📌 Loading chunk 114 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.835961Z","level":"info","event":"✅ Uploaded chunk 114 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.867535Z","level":"info","event":"📌 Loading chunk 115 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:29:59.993401Z","level":"info","event":"✅ Uploaded chunk 115 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.024726Z","level":"info","event":"📌 Loading chunk 116 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.207668Z","level":"info","event":"✅ Uploaded chunk 116 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.234504Z","level":"info","event":"📌 Loading chunk 117 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.375021Z","level":"info","event":"✅ Uploaded chunk 117 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.412077Z","level":"info","event":"📌 Loading chunk 118 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.559997Z","level":"info","event":"✅ Uploaded chunk 118 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.591078Z","level":"info","event":"📌 Loading chunk 119 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.856501Z","level":"info","event":"✅ Uploaded chunk 119 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:00.901769Z","level":"info","event":"📌 Loading chunk 120 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.080879Z","level":"info","event":"✅ Uploaded chunk 120 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.118141Z","level":"info","event":"📌 Loading chunk 121 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.318961Z","level":"info","event":"✅ Uploaded chunk 121 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.350346Z","level":"info","event":"📌 Loading chunk 122 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.531490Z","level":"info","event":"✅ Uploaded chunk 122 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.555640Z","level":"info","event":"📌 Loading chunk 123 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.712194Z","level":"info","event":"✅ Uploaded chunk 123 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.746800Z","level":"info","event":"📌 Loading chunk 124 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.899155Z","level":"info","event":"✅ Uploaded chunk 124 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:01.920238Z","level":"info","event":"📌 Loading chunk 125 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.048019Z","level":"info","event":"✅ Uploaded chunk 125 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.079081Z","level":"info","event":"📌 Loading chunk 126 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.318975Z","level":"info","event":"✅ Uploaded chunk 126 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.385916Z","level":"info","event":"📌 Loading chunk 127 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.749116Z","level":"info","event":"✅ Uploaded chunk 127 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:02.824125Z","level":"info","event":"📌 Loading chunk 128 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.023567Z","level":"info","event":"✅ Uploaded chunk 128 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.047198Z","level":"info","event":"📌 Loading chunk 129 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.227853Z","level":"info","event":"✅ Uploaded chunk 129 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.256692Z","level":"info","event":"📌 Loading chunk 130 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.415193Z","level":"info","event":"✅ Uploaded chunk 130 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.448871Z","level":"info","event":"📌 Loading chunk 131 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.595342Z","level":"info","event":"✅ Uploaded chunk 131 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.630928Z","level":"info","event":"📌 Loading chunk 132 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.878830Z","level":"info","event":"✅ Uploaded chunk 132 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:03.919024Z","level":"info","event":"📌 Loading chunk 133 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.104579Z","level":"info","event":"✅ Uploaded chunk 133 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.139960Z","level":"info","event":"📌 Loading chunk 134 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.339267Z","level":"info","event":"✅ Uploaded chunk 134 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.377508Z","level":"info","event":"📌 Loading chunk 135 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.625876Z","level":"info","event":"✅ Uploaded chunk 135 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.658670Z","level":"info","event":"📌 Loading chunk 136 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.879899Z","level":"info","event":"✅ Uploaded chunk 136 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:04.910332Z","level":"info","event":"📌 Loading chunk 137 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.077991Z","level":"info","event":"✅ Uploaded chunk 137 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.105642Z","level":"info","event":"📌 Loading chunk 138 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.230719Z","level":"info","event":"✅ Uploaded chunk 138 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.253426Z","level":"info","event":"📌 Loading chunk 139 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.438345Z","level":"info","event":"✅ Uploaded chunk 139 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.464645Z","level":"info","event":"📌 Loading chunk 140 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.619588Z","level":"info","event":"✅ Uploaded chunk 140 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.650141Z","level":"info","event":"📌 Loading chunk 141 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.783260Z","level":"info","event":"✅ Uploaded chunk 141 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.811070Z","level":"info","event":"📌 Loading chunk 142 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.976194Z","level":"info","event":"✅ Uploaded chunk 142 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:05.998927Z","level":"info","event":"📌 Loading chunk 143 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.161573Z","level":"info","event":"✅ Uploaded chunk 143 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.200024Z","level":"info","event":"📌 Loading chunk 144 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.319448Z","level":"info","event":"✅ Uploaded chunk 144 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.342574Z","level":"info","event":"📌 Loading chunk 145 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.497486Z","level":"info","event":"✅ Uploaded chunk 145 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.525302Z","level":"info","event":"📌 Loading chunk 146 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.641269Z","level":"info","event":"✅ Uploaded chunk 146 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.664710Z","level":"info","event":"📌 Loading chunk 147 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.789324Z","level":"info","event":"✅ Uploaded chunk 147 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.818071Z","level":"info","event":"📌 Loading chunk 148 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.967191Z","level":"info","event":"✅ Uploaded chunk 148 with 5000 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:06.979547Z","level":"info","event":"📌 Loading chunk 149 into table: fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:07.054899Z","level":"info","event":"✅ Uploaded chunk 149 with 2329 rows into fcl_activity_20250801","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-26T16:30:07.066266","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
